@@ -1,20 +1,31 @@
-export interface Candidate {
-    firstName: string;
-    lastName: string;
-    location: string;
-    workHistory: {
-        company: string;
-        title: string;
-        startDate: string;
-        endDate: string;
-    }[];
-}
+import {Candidate} from "@/types/candidate";
 
 export const USERS: Candidate[] = [
     {
         "firstName": "Alice",
         "lastName": "Johnson",
         "location": "New York, NY",
+        "gender": 'female',
+        "workHistory": [
+            {
+                "company": "TechCorp",
+                "title": "Software Engineer",
+                "startDate": "2018-03-01",
+                "endDate": "2020-08-31"
+            },
+            {
+                "company": "Innovatech",
+                "title": "Senior Developer",
+                "startDate": "2020-09-01",
+                "endDate": "2023-01-15"
+            }
+        ]
+    },
+    {
+        "firstName": "Alice",
+        "lastName": "Blum",
+        "location": "New York, NY",
+        "gender": 'female',
         "workHistory": [
             {
                 "company": "TechCorp",
@@ -34,6 +45,7 @@ export const USERS: Candidate[] = [
         "firstName": "Bob",
         "lastName": "Smith",
         "location": "San Francisco, CA",
+        "gender": 'male',
         "workHistory": [
             {
                 "company": "WebWorld",
@@ -53,6 +65,7 @@ export const USERS: Candidate[] = [
         "firstName": "Carol",
         "lastName": "Davis",
         "location": "Austin, TX",
+        "gender": 'female',
         "workHistory": [
             {
                 "company": "DataDynamics",
@@ -72,6 +85,7 @@ export const USERS: Candidate[] = [
         "firstName": "David",
         "lastName": "Wilson",
         "location": "Seattle, WA",
+        "gender": 'male',
         "workHistory": [
             {
                 "company": "CloudNet",
@@ -91,6 +105,7 @@ export const USERS: Candidate[] = [
         "firstName": "Eva",
         "lastName": "Brown",
         "location": "Chicago, IL",
+        "gender": 'female',
         "workHistory": [
             {
                 "company": "FinancePro",
@@ -110,6 +125,7 @@ export const USERS: Candidate[] = [
         "firstName": "Frank",
         "lastName": "Miller",
         "location": "Boston, MA",
+        "gender": 'male',
         "workHistory": [
             {
                 "company": "EduTech",
@@ -129,6 +145,7 @@ export const USERS: Candidate[] = [
         "firstName": "Grace",
         "lastName": "Harris",
         "location": "Denver, CO",
+        "gender": 'female',
         "workHistory": [
             {
                 "company": "HealthCare Inc.",
